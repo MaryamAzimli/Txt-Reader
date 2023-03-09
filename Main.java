@@ -30,40 +30,15 @@ public class Main {
                 InputDocument inputDocument3 = new InputDocument(file3, verbDirectory);
                 File file4 = new File(
                                 "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\4.txt");
-                System.out.print("4:");
-                InputDocument inputDocument4 = new InputDocument(file4, verbDirectory);
-                File file5 = new File(
-                                "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\5.txt");
-                System.out.print("5:");
-                InputDocument inputDocument5 = new InputDocument(file5, verbDirectory);
-                File file6 = new File(
-                                "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\6.txt");
-                System.out.print("6:");
-                InputDocument inputDocument6 = new InputDocument(file6, verbDirectory);
-                File file7 = new File(
-                                "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\7.txt");
-                System.out.print("7:");
-                InputDocument inputDocument7 = new InputDocument(file7, verbDirectory);
-                File file8 = new File(
-                                "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\8.txt");
-                System.out.print("8:");
-                InputDocument inputDocument8 = new InputDocument(file8, verbDirectory);
-                File file9 = new File(
-                                "C:\\Users\\Maryam Azimli\\Desktop\\UNIVERSITY\\cs\\cs102\\labs\\lab2\\9.txt");
-                System.out.print("9:");
-                InputDocument inputDocument9 = new InputDocument(file9, verbDirectory);
+                
 
                 System.out.println("\n Dissimilaarity Matrix: ");
-                System.out.printf("%s%5s%10s%10s%10s%10s%10s%10s%10s%10s%10s", "N", "0 ", "1 ", "2 ", "3 ", "4 ", "5 ",
-                                "6 ", "7 ", "8 ",
-                                "9");
+                System.out.printf("%s%5s%10s%10s%10s%10s%10s%10s", "N", "0 ", "1 ", "2 ", "3 ");
 
-                InputDocument[] inputDocuments = { inputDocument, inputDocument1, inputDocument2, inputDocument3,
-                                inputDocument4,
-                                inputDocument5, inputDocument6, inputDocument7, inputDocument8, inputDocument9 };
+                InputDocument[] inputDocuments = { inputDocument, inputDocument1, inputDocument2, inputDocument3};
                 System.out.println();
                 for (int i = 0; i < 2; i++) {
-                        for (int m = 2; m < 10; m++) {
+                        for (int m = 2; m < 4; m++) {
                                 System.out.printf("%10s", inputDocuments[i].calculateDissimilarity(inputDocuments[m]));
                         }
                         System.out.println("\n"+i);
